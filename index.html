@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Successfully Whitelisted</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #0b0e17;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+    }
+
+    .container {
+        background-color: #11151f;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        width: 400px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .success-icon {
+        font-size: 40px;
+        color: #2dd36f;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #c1c1c1;
+        margin-bottom: 20px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: monospace;
+    }
+
+    input {
+        border: 1px solid #333;
+        margin-bottom: 20px;
+        background-color: #1c202a;
+        color: #fff;
+    }
+
+    button {
+        border: none;
+        background-color: #2dd36f;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    button:hover {
+        background-color: #27c161;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .links a {
+        color: #888;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">&#10004;</div>
+        <h1>Successfully whitelisted!</h1>
+        <p>Please return to the service for access, thank you.</p>
+        <input type="text" value="FREE_d1fadc0b38690f8e2ac6d6d19fb717b1" readonly>
+        <button onclick="copyCode()">Copy</button>
+    </div>
+
+<script>
+function copyCode() {
+    const input = document.querySelector('input');
+    input.select();
+    input.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+}
+</script>
+</body>
+</html>
